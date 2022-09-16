@@ -1,0 +1,57 @@
+/* імпорт шрифту */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+/* загальні стилі (спільні) для елементів */
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    text-align: center;
+    margin: 0 auto;
+}
+body {
+background: #F0FFF0;
+}
+/* стилі для класу form */
+.form {
+    background-color: black;
+    height: 560px;
+    width: 500px;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+/* стилі для частини макету (логотип і фраза) */
+.logo {
+    padding-top: 20px;
+    margin-bottom: 60px;
+}
+/* стилі для логотипу */
+.logo__img {
+    margin-bottom: 26px;
+}
+/* стилі вітальної фрази */
+.logo__description {
+    letter-spacing: 22px;
+    font-weight: 600;
+    line-height: 35px;
+}
+/* стилі посилань входу та реєстрації */
+.enter__btn {
+    height: 60px;
+    width: 350px;
+    border: 4px solid #FFFFFF;
+}
+/* стилі для посилань */
+.btn__link {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 18px;
+    word-spacing: 8px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+/* стилі проміжку між посиланнями */
+.enter__btn:first-child {
+    margin-bottom: 40px;
+}
