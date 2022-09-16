@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 3%;
+}
+/* header styles */
+header > p {
+    font-weight: 800;
+}
+
+/* education styles */
+#education > p:nth-child(2), #supercomputing > p , #links > p:nth-child(2){
+    font-style: italic;
+}
+
+/* content styles */
+.content_link {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* list styles */
+ol {
+    margin-left: 15px;
+    padding-left: 0;
+}
