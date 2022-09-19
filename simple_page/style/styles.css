@@ -1,0 +1,174 @@
+/* класна робота */
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    color: #0bbbd3;
+    text-align: center;
+    text-decoration: none;
+    font-size: 48px;
+    padding: 28px 0;
+}
+
+.logo > span{
+    color: black;
+}
+
+.banner{
+    background-image: url("../img/bg.jpeg");
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+.banner > div{
+    background-image: url("../img/flag.png");
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 64px;
+    padding: 24% 12%;
+    background-position: 6% 53%;
+}
+
+.content{
+    width: 300px;
+    background: gray;
+}
+
+/* домашня робота */
+
+/* стилі секції визначних місць */
+.landmarks {
+    margin: 0 auto;
+    padding: 20px 80px; 
+    /* за макетом в цьому блоці контент на віддаленні від границь сторінки, макет вказує що на 80px по бокам, а зверху приблизно 20*/
+}
+/* стилі заголовку секції місць */
+.landmarks__title {
+    font-size: 48px;
+    display: inline-block;
+    font-weight: 700;
+    padding-bottom: 16px;
+    border-bottom: 5px solid #33B8F1;
+    /* text-decoration: underline не дала можливість встановити проміжок між заголовком логічного блоку на підкресленням, тому логічніше
+    здалося задати підкреслення через властивість  border-bottom*/
+    line-height: 80px;
+}
+/* стилі списку секції, здалося логічнішим використати гріди */
+.landmarks__items {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 39px;
+}
+/* стилі елементів списку */
+.item {
+    width: 399px;
+    border-radius: 30px;
+    box-shadow: -5px 5px 5px #595050, 5px 5px 5px #595050;
+}
+/* стилі для кращого вигляду зображень списку */
+.item__img > img {
+    width: 100%;
+    overflow: hidden;
+}
+/* стилі заголовків списку */
+.item__title {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0;
+}
+/* стилі опису елемента списку */
+.item__descriotion {
+    font-size: 32px;
+    font-weight: 400;
+    color: #595050;
+    text-overflow: clip;
+}
+/* стилі блоку підтримки */
+.support {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 175px;
+}
+/* стилі заголовку підтримки, ситуація з підкресленням аналогічна такій в заголовку визначних місць */
+.support__title {
+    font-size: 48px;
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 16px;
+    border-bottom: 5px solid #33B8F1;
+    line-height: 80px;
+    margin-bottom: 42px;
+}
+/* стилі зображення(взято з макету, бо оригінал має трохи більшу ширину) */
+.support__img > img {
+    width: 975px;
+}
+/* стиль посилання підтримки */
+.support__link > a {
+    font-size: 48px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0A2DA9;
+    padding: 10px 50px;
+}
+/* стиль блоку підвала */
+.footer {
+    background-color: #0A2DA9;
+    text-align: center;
+    padding-bottom: 20px;
+}
+/* стиль заголовку підвала */
+.footer__title > a{
+    display: block;
+    color: #0bbbd3;
+    text-align: center;
+    text-decoration: none;
+    font-size: 64px;
+    padding-top: 50px;
+}
+.footer__title > a > span {
+    color: #F8F5F5;
+}
+/* стилі контактів блоку підвала*/
+.footer__contacts {
+    padding-top: 25px;
+    display: grid;
+    margin-bottom: 50px;
+}
+/* стилізація посилань контактів блоку підвала */
+.footer__contacts > a {
+    color: #595050;
+    text-decoration: none;
+    padding-bottom: 35px;
+    font-size: 32px;
+    font-weight: 400;
+}
+/* стилі блоку посилань на соц. мережі */
+.footer__social-networks {
+    margin: 0 auto;
+    display: inline-flex;
+    columns: 4;
+    column-gap: 75px;
+}
+/* стилі елементів блоку посилань на соц. мережі */
+.footer__social-networks > .networks-content {
+    background-color: #0931BF;
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+}
+/* стилі посилань на соціальні мережі */
+.networks-content > a {
+    display: inline-block;
+    padding-top: 15px;
+}
