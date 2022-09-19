@@ -1,0 +1,100 @@
+/* загальні стилі документу */
+* {
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+/* стилі блоку хедер(додала приблизні відступи за макетом, але трохи змінила їх для кразого вигляду) */
+/* так само приблизні відступи для кращого вигляду додала у всьому, виходячи з макету */
+.header {
+    margin: 3% 10%;
+}
+/* стилі для заголовку блоку хедер */
+.header__title {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #020953;
+    font-weight: 600;
+    font-size: 45px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+/* стилі пояснень блоку хедер */
+.header__description {
+    font-weight: 400;
+    color: #060a3f;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 5%;
+}
+/* стилі контейнера списку блоку хедер */
+.header__list {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+/* стилі зміни положення елементів списку блоку хедер */
+body:hover .header__list {
+    transform: rotate(180deg);
+}
+body:hover .list__item {
+    transform: rotate(180deg);
+}
+/* стилі елементу списку блоку хедер */
+.list__item {
+    width: 345px;
+    height: 360px;
+    background-position:bottom;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    box-shadow: inset 0px -20px 20px  rgba(6, 10, 64, 0),  
+                inset 0px -74px 50px rgba(6, 10, 64, 0.75);
+}
+/* стилі елементу спан кожного елементу списку блоку хедер */
+.list__item span {
+    color: #FFC800;
+    font-weight: 300;
+    font-size: 20px;
+}
+/* стилі елементу р кожного елементу списку блоку хедер коли на елемент наведено*/
+.list__item:hover p {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    font-weight: 300;
+    font-size: 20px;
+    padding-left: 38%;
+    color: #ffffff;
+}
+/* стиль елменту р кожного елементу списку хедер коли не наведено */
+.list__item p {
+    display: none;
+}
+/* далі - стилі елементів списку для зображень фону */
+.list__item:nth-child(1) {
+    background-image: url(../img/image1.png);
+}
+.list__item:nth-child(2) {
+    background-image: url(../img/image2.png);
+    background-position: center;
+}
+.list__item:nth-child(3) {
+    background-image: url(../img/image3.png);
+    background-position: center;
+}
+.list__item:nth-child(4) {
+    background-image: url(../img/image4.png);
+    background-position: center;
+}
+.list__item:nth-child(5) {
+    background-image: url(../img/image5.png);
+    background-position: center;
+}
+.list__item:nth-child(6) {
+    background-image: url(../img/image6.png);
+    background-position: center;
+}
