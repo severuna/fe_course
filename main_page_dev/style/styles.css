@@ -1,0 +1,388 @@
+/* шмпорт нормалізатора */
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+/* універсальні стилі */
+* {
+    color: white;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/* видалення декорацій для всіх посилань на сторінці */
+a {
+    text-decoration: none;
+}
+/* стилі загальні для сторінки */
+html {
+    font-size: 10px;
+    cursor: grabbing;
+    background-color: #212529;
+    color: #FFB742;
+}
+/* стилі секціїї хедер */
+.header {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin: 2rem 3%;
+    align-items: center; 
+    font-family: 'Poppins', sans-serif;
+    column-gap: 5%;
+}
+/* стилі списку навігації секціїї хедер */
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    width: 60%;
+    font-size: 2rem;
+    column-gap: 2%;
+}
+/* стилі елементів списку навігації секції хедер */
+.nav__item {
+    transition: all .6s ease-out;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+/* стилі зміни кольору при наведенні на елемент списку навігації секції хедер */
+.nav__item:hover {
+    color: #FFB742;
+}
+/* стилі кнопки найму (загальні для декількох таких кнопок на сторінці) */
+.btn {
+    font-size: 2rem;
+    background-color: #FFB742;
+    color: #212529;
+    width: 12rem;
+    height: 5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    display: inline-flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+}
+/* стилі секції "героя" */
+.hero {
+    display: grid;
+    margin: 7rem 5%;
+    width: 90%;
+}
+/* стилі заголовку секції "героя" */
+.hero__title {
+    font-weight: 700;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 3.2rem;
+}
+/* додавання спецсимволу до заголовку секції "героя" */
+.hero__title::after {
+    content: "\1F44B";
+}
+/* стилі виділення імені в заголовку секції "героя" */
+.hero__title  span {
+    color: #FFB742;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+}
+/* стилі опису професії секції "героя" */
+.hero__proff {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 9rem;
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+}
+/* стилі "про себе" секції "героя" */
+.hero__about {
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+/* стилі контейнеру блоку переваг секції "героя" */
+.hero__benefits {
+    margin: 10rem auto;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* стилі елемента списку контейнеру блоку переваг секції "героя" */
+.benefits__item  {
+    background: rgba(56, 62, 69, 0.44);
+    padding: 2rem;
+    min-width: 250px;
+    display: grid;
+    margin: 1rem;
+    grid-template-columns: 1fr 3fr 0.3fr;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+/* стилі зображення елементу списку  контейнеру блоку переваг секції "героя"  */
+.item__img {
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 1rem;
+}
+/* стилі  опису елементу списку  контейнеру блоку переваг секції "героя" */
+.item__description {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+}
+/* стилі заголовку опису елементу списку  контейнеру блоку переваг секції "героя"  */
+.description__title {
+    font-size: 3.1rem;
+    color: #FFB742;
+    transition: all 1s;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+/* стилі  подробиць опису елементу списку  контейнеру блоку переваг секції "героя"  */
+.description__text {
+    font-size: 1.8rem;
+    transition: all 1s;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+/* стилі зображення стрілки опису елементу списку  контейнеру блоку переваг секції "героя"   */
+.item__arrow {
+    padding-top: 80%
+}
+/* стилі зміни при наведенні на елемент списку   контейнеру блоку переваг секції "героя" */
+.benefits__item:hover {
+    background:  linear-gradient(94.3deg, #FFB742 0%, rgba(255, 123, 66, 0.76) 99%);
+}
+/* стилі зміни при наведенні на елемент списку   контейнеру блоку переваг секції "героя " - змфна стилю заголовку */
+.benefits__item:hover .description__title {
+    color: #000000;
+}
+/* стилі зміни при наведенні на елемент списку   контейнеру блоку переваг секції "героя " - змфна стилю подробиць */
+.benefits__item:hover .description__text {
+    color: #000000;
+}
+/* стилі секції "про..." */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 5%;
+}
+/* стилі короткого змісту (спільні для деяких секцій) */
+.description__quick {
+    display: inline-block;
+    color: #FFB742;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 1rem 2rem;
+    border-radius: 18px;
+}
+/* стилі заголовку (спільні для деяких секцій) */
+.description__titles {
+    font-weight: 700;
+    font-size: 4.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+/* стилі зображення секції "про..." */
+.about__img img {
+    padding-top: 2rem;
+    width: 95%;
+}
+/* стилі текстового наповнення (спільні для деяких секцій) */
+.description__more-text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #d4d4d4;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5.6rem;
+}
+/* стилі для кнопки "найняти" секції "про..." */
+.about__description .btn{
+    text-align: left;
+    margin-left: 0;
+}
+/* стилі секції навчиок */
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 5%;
+}
+/*  стилі контейнеру опису секції навичок  */
+.skills__description {
+    padding-right: 5rem;
+}
+/* стилі кнопки "найняти" контейнеру опису секції навичок  */
+.skills__description .btn {
+    margin-left: 0;
+}
+/* стилі  контейнеру демонстрації навичок секції навичок  */
+.skills__item {
+    display: flex;
+    max-width: 42rem;
+    min-width: 7rem;
+    height: 40%;
+    flex-wrap: wrap;
+}
+/* стилі  зображеннь навичок контейнеру навичок секції навичок   */
+.skills__item .item__img {
+    background-color: #383E45;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10px;
+    transition: all 1s;
+}
+/* стилі при наведенні зображеннь навичок контейнеру навичок секції навичок */
+.item__img:hover {
+    background-color: #FFB74280;
+}
+/* стилі секції портфоліо */
+.works {
+    margin: 0 5%;
+    text-align: center;
+}
+/* стилі  навігації секції портфоліо  */
+.works__list {
+    display: flex;
+    margin: 2% 10%;
+    flex-wrap: wrap;
+    list-style: none;
+} 
+/* стилі елементу списку навігації секції портфоліо */
+.list__item {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 1rem;
+    transition: all 2s;
+    line-height: 3rem;
+}
+/* стилі при наведенні елементу списку навігації секції портфоліо */
+.list__item:hover {
+    background-color: #FFB742;
+    color: #000000;
+}
+/* стилі контейнеру демонстрації портфоліо */
+.works__example {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+/* стилі  блоку контейнеру демонстрації секції портфоліо  */
+.works__img-list {
+    display: grid;
+    grid-template: 1fr/ 1fr;
+    row-gap: 2rem;
+}
+/* стилі зображення блоку контейнеру демонстрації секції портфоліо   */
+.img-list__item {
+    width: 100%;
+}
+/* стилі секції відгуків */
+.testimonails {
+    margin: 7rem 5%;
+    text-align: center;
+}
+/* стилі контейнеру вігуків секції відгуків  */
+.testimonails__customer {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap:wrap;
+}
+/* стилі елементу  контейнеру вігуків секції відгуків */
+.customer__item {
+    background-color: #ffffff;
+    text-align: left;
+    padding: 2rem;
+    min-width: 250px;
+    width: 30%;
+    margin: 1%;
+    color: black;
+    border-radius: 10px;
+}
+/* стилі для зображень зірок в елементі контейнеру вігуків секції відгуків */
+.item__stars svg {
+    margin: 2%;
+}
+/* стилі опису елементу контейнеру вігуків секції відгуків */
+.item__says {
+    color: black;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 3.4rem;
+    margin: 7% auto;
+}
+/* стилі картки користувача елементу контейнеру вігуків секції відгуків */
+.item__user {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+}
+/* стилі імені в інформації картки користувача елементу контейнеру вігуків секції відгуків */
+.user__info-name {
+    color: black;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    line-height: 3.4rem;
+}
+/* стилі професії в інформації картки користувача елементу контейнеру вігуків секції відгуків */
+.user__info-proff {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 1.6rem;
+}
+/* стилі секції футеру */
+.footer {
+    background-color: #1C1C1C;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 6rem 4rem;
+}
+/* стилі імені в основній інформації секції футеру */
+.info__title {
+    color: #FFB742;
+    font-weight: 700;
+    font-size: 3.2rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 3.2rem;
+}
+/* стилі професії в основній інформації секції футеру */
+.info__proff {
+    font-weight: 600;
+    color: #D4D4D4;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    font-family: 'Work Sans', sans-serif;
+}
+/* стилі заголовку в секції футеру (спільні для деяких в футері) */
+.footer__list-title {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #f5fbf2;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 3.2rem;
+    margin-bottom: 3rem;
+}
+.footer__list {
+    list-style: none;
+}
+/* стилі елементів списку секції футер (спільні для деяких елементів в футері) */
+.footer__list-item a, .footer__links-mail {
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 3.6rem;
+    color: #7B7B7B;
+    font-family: 'Work Sans', sans-serif;
+}
