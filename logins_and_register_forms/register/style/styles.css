@@ -1,0 +1,157 @@
+/* iмпорт нормалізатора */
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+/* універсальні стилі */
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+/* видалення декорацій для всіх посилань на сторінці */
+a {
+    text-decoration: none;
+    color: #4743E0;
+}
+/* стилі загальні для сторінки */
+html {
+    font-size: 10px;
+}
+.register {
+    display: flex;
+    flex-direction: row;
+}
+.register-form {
+    width: 55%;
+    z-index: 0;
+    padding: 3% 5%;
+    position: relative;
+}
+.login__link {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    display: inline-block;
+    position: absolute;
+    right: 5rem;
+}
+.login__link::after {
+    content: url("../images/login_link_pic.svg");
+}
+.register-form__header {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.register-form__header-title {
+    color: #42505C;
+    font-weight: 700;
+    font-size: 5.4rem;
+    width: 45%;
+    line-height: 6.8rem;
+    margin-right: 5%;
+}
+.register-form__header-subtitle  {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #404040;
+    width: 45%;
+}
+.register-form__field-info, .password-field {
+    border-top: 1px dashed rgba(0, 0, 0, 0.2);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem 0;
+}
+.field-info {
+    display: grid;
+    width: 40%;
+    padding: 1.8rem 0;
+}
+label, .employees__label {
+    color: #333333;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+}
+label::after, .employees__label::after {
+    content: url("../images/quest.svg");
+    float: right;
+}
+span {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+input {
+    border: 1px solid #D1D1D1;
+    padding: 1.5rem 3rem;
+}
+input::placeholder {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: rgba(0, 0, 0, 0.4)
+}
+.field-info__employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2%;
+}
+.field-info__employees-input {
+    display: none;
+}
+.field-info__employees-label {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 0.8rem 0.5rem;
+}
+.field-info__employees-label::after {
+    content: none;
+}
+.field-info__employees-input:checked + .field-info__employees-label {
+    color: #4743E0;
+    border: 1px solid #4743E0;
+}
+.register-form__field-register {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+.field-register__agree label {
+    color: #404040;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+}
+.btn {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    background-color: #4743E0;
+    border: none;
+}
+.register-image {
+    padding-top: 15%;
+    background-color: #E5E5E5;
+    z-index: 1;
+}
+.register-image img {
+    float: right;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    width: 120%;
+    height: 90%;
+}
