@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Homework 8</title>
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+    <main>
+        <div class="login">
+            <div class="login-form">
+                <h1 class="login-form__title">Log in</h1>
+                <p class="login-form__subtitle">Please input your information in the fields below to enter your Journey platform</p>
+                <form class="login-form__form">
+                    <div class="login-form__form-data">
+                        <div class="form-data__field">
+                            <label class="form-data__field-label"  for="login" title="input your login">Account</label>
+                            <br>
+                            <input class="form-data__field-login field" type="text" id="login" required placeholder="Username">
+                        </div>
+                        <div class="form-data__field">
+                            <input class="form-data__field-password field
+                            " type="password" id="password" required placeholder="Password">
+                        </div>
+                        <a href="#" class="form-data__field-forgot" target="_blank">Forgot your password?</a>
+                    </div>
+                    <div class="login-form__form-enter">
+                        <div class="form-enter__remember">
+                            <input type="checkbox" name="remember" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <input class="login-button" type="submit" value="Log in">
+                    </div>
+                </form>
+                <div class="login-register">
+                    <p class="login-register__description">Don’t have an account yet?</p>
+                    <a href="./register/index.html" class="login-register__link" target="_blank">Register here</a>
+                </div>
+            </div>
+            <div class="login-image">
+                <img src="./images/login.svg" alt="login image">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

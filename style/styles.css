@@ -1,0 +1,132 @@
+/* шмпорт нормалізатора */
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+/* універсальні стилі */
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+}
+/* видалення декорацій для всіх посилань на сторінці */
+a {
+    text-decoration: none;
+}
+/* стилі загальні для сторінки */
+html {
+    font-size: 10px;
+}
+.login {
+    display: flex;
+    flex-direction: row;
+}
+.login-form {
+    padding: 2% 8%;
+    width: 25%;
+    z-index: 0;
+}
+.login-form__title {
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 6.8rem;
+    color: #42505C;
+}
+.login-form__subtitle {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #404040;
+}
+.login-form__form-data {
+    margin: 3% 0;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px dashed rgba(0, 0, 0, 0.2);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+.form-data__field-label {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    color: #333333;
+}
+.form-data__field-label::after {
+    content: url("../images/question_pic.svg");
+    float: right;
+} 
+.field {
+    padding: 1rem 3rem;
+    border: 1px solid #D1D1D1;
+    background-repeat: no-repeat;
+    background-position: 1rem;
+    width: 80%;
+}
+.field::placeholder {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: rgba(0, 0, 0, 0.24);
+}
+.form-data__field-login  {
+    background-image: url("../images/user_pic_log.svg");
+}
+.form-data__field-password {
+    background-image: url("../images/pass_pic.svg");
+
+}
+.form-data__field-forgot {
+    color: #4743E0;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+}
+.login-form__form-enter {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-enter__remember label {
+    color: #333333;
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 1rem;
+    line-height: 2.8rem;
+}
+.login-button {
+    padding: 0.5rem 3rem;
+    color: #ffffff;
+    background-color: #4743E0;
+    font-weight: 7000;
+    font-size: 1.4rem;
+    border: none;
+    line-height: 2.8rem;
+}
+.login-register {
+    margin-top: 20%;
+    text-align: center;
+}
+.login-register__description {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #333333;
+}
+.login-register__link{
+    color: #4743E0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+}
+.login-image {
+    width: 75%;
+    background-color:  #E5E5E5;
+    position: relative;
+}
+.login-image img{
+    position: absolute;
+    width: 130%;
+    height: 120%;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
