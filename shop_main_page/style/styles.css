@@ -1,0 +1,400 @@
+/* шмпорт нормалізатора */
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+/* універсальні стилі */
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+}
+/* видалення декорацій для всіх посилань на сторінці */
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* стилі загальні для сторінки */
+html {
+    font-size: 10px;
+}
+.header, .banner {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header__nav-link {
+    display: inline-block;
+    color: #333333;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 2.8rem;
+}
+.header__nav-search {
+    border: 1px solid #A04955;
+    border-radius: 2rem;
+    padding: 1.3rem 3.3rem;
+    width: 22rem;
+    text-align: center;
+    background-image: url("../images/search_pic.svg");
+    background-position: 1rem 0.5rem ;
+    background-repeat: no-repeat;
+}
+.header__nav-search::placeholder {
+    color: #787878;
+    font-family: 'Oswald', sans-serif; 
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.banner__description {
+    width: 40%;
+}
+.banner__description-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 6.5rem;
+    line-height: 9.6rem;
+    color: #001F3D;
+}
+.banner__description-subtitle {
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #000000
+}
+.goShop__btn {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color:#000000;
+    padding: 0.5rem 2rem;
+    border: 1px solid #000000;
+    margin: 2rem 0;
+}
+.sale {
+    background-color: #F1F1F1;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 4rem;
+    text-align: center;
+}
+.sale__subtitle {
+    font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 5rem;
+    font-family: 'Oswald', sans-serif;
+    color: #333333;
+}
+.sale__title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 6.4rem;
+    line-height: 9.4rem;
+    color: #333333;
+}
+.sale__cards {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    justify-content: space-between;
+    align-items: center; 
+    align-self: stretch; 
+    flex-wrap: wrap;
+}
+.sale__cards-card {
+    padding: 2rem 3rem;
+    background-color: #FFFFFF;
+    width: 20rem;
+    margin: 0.5rem;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-self: stretch;
+}
+.card__name {
+    color: #333333;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    padding: 1rem 2rem;
+}
+.card__star {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-self: stretch;
+}
+.card__img {
+    width: 80%;
+}
+.card__price {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #333333;
+    margin: 0.3rem;
+}
+.card__price span {
+    font-weight: 500;
+}
+.card__bag {
+    background-color: #A04955;
+    background-image: url("../images/bag.svg");
+    padding-right: 1rem;
+    padding-left: 3.6rem;
+    background-position: 1rem;
+    background-repeat: no-repeat;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+.new {
+    display: flex;
+    background-color: #F5F5F5;
+    flex-direction: row;
+    padding: 7rem;
+    justify-content: space-around;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+.new__card {
+    width: 45%;
+    text-align: center;
+}
+.new__card-pic {
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 40rem;
+    position: relative;
+}
+.ecots {
+    background-image: url("../images/new_1.png");
+}
+.print {
+    background-image: url("../images/new_2.png");
+}
+.new__card-pic__text {
+    background-color: rgba(160, 73, 85, 0.8);
+    color: #FFFFFF;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    line-height: 5.3rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.new__card-dscription {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #000000;
+    padding-top: 2rem;
+}
+.new__card .goShop__btn {
+    width: 60%;
+}
+.pant {
+    background-image: url("../images/pant_block.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 3rem 7rem;
+}
+.pant__description {
+    width: 45%;
+}
+.pant__description-title {
+    font-weight: 700;
+    font-size: 6.5rem;
+    line-height: 9.6rem;
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+}
+.pant__description-subtitle {
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #FFFFFF;
+}
+.pant .goShop__btn {
+    color: #FFFFFF;
+    border: none;
+    background-color: #A04955;
+}
+.trend {
+    text-align: center;
+    background-color: #A04955;
+    height: 30rem;
+}
+.trend__title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 6.5rem;
+    line-height: 9.6rem;
+    color: #FFFFFF;
+    background-color: #A04955;
+}
+.trend-cards {
+    display: flex;
+    flex-direction: row;
+    padding: 0 5rem;
+    justify-content: space-around;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+.trend-cards__card {
+    margin: 2rem;
+    background-color: #FFFFFF;
+    text-align: center;
+    height: 30rem;
+    width: 30rem;
+    padding: 1rem;
+}
+.trend-cards__card-img {
+    width: 28rem;
+    height: 80%;
+}
+.trend-cards__card-title {
+    color: #333333;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+.trend-cards__card .goShop__btn {
+    width: 70%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1.8rem;
+    background-color: #A04955;
+}
+.about {
+    margin: 40rem 10rem 3rem 10rem;
+    background-color: #F3F3F3;
+    text-align: center;
+    position: relative;
+    padding-top: 20rem;
+}
+.about__img {
+    position: absolute;
+    top: -10rem;
+    left: 38%;
+}
+.about__title {
+    color: #001F3D;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 6.5rem;
+    line-height: 9.6rem;
+}
+.about__subtitle {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    justify-content: space-between;
+    align-items: baseline;
+    align-self: stretch;
+    flex-wrap: wrap;
+    color: #FFFFFF;
+    background-color: #A04955;
+}
+.footer-link {
+    width: 20%;
+}
+.footer-link__title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 2rem;
+}
+.footer-link__nav {
+    display: flex;
+    flex-direction: column;
+}
+.footer-link__nav-item {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+}
+.subscribe {
+    width: 35%;
+}
+.footer-link__subtitle, .form-label {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 4.3rem;
+}
+.form {
+    margin-top: 3rem;
+    height: 10rem;
+    position: relative;
+}
+.form-mail {
+    width: 30rem;
+    border: none;
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+.form-mail::placeholder {
+    color: #A04955;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+}
+.form-btn {
+    color: #F3F3F3;
+    background-color: #A04955;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    border: none;
+    line-height: 3.2rem;
+    padding: 0 2rem;
+    position: absolute;
+    left: 20rem;
+    bottom: 0.5rem;
+    z-index: 1;
+}
